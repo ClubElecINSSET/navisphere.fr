@@ -87,10 +87,6 @@ main {
     animation: fadein 0.5s;
 }
 
-header {
-    padding-top: 64px;
-}
-
 .logo {
     width: 40%;
     min-width: 300px;
