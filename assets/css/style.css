@@ -62,7 +62,6 @@ body {
 .top-logo {
     height: 45px;
     margin-left: 5rem;
-    top: 0;
 }
 
 @media screen and (min-width: 1600px) {
