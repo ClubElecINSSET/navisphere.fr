@@ -21,7 +21,6 @@ body {
     background-color: #e1e0e2;
     color: #1e1f1d;
     box-sizing: border-box;
-    animation: fadein 0.5s;
 }
 
 * {
@@ -49,7 +48,7 @@ body {
     opacity: .1;
     position: absolute;
     right: 5rem;
-    z-index: -9999
+    z-index: -9999;
 }
 
 .top-border {
@@ -57,36 +56,36 @@ body {
     left: 0;
     position: absolute;
     right: 0;
-    top: 0
+    top: 0;
 }
 
 .top-logo {
     height: 45px;
-    left: 5rem;
-    position: absolute;
-    top: 0
+    margin-left: 5rem;
+    top: 0;
 }
 
 @media screen and (min-width: 1600px) {
     .background-logo {
-        display: block
+        display: block;
     }
 }
 
 @media screen and (min-width: 2000px) {
     .background-logo {
-        display: none
+        display: none;
     }
 }
 
-@media screen and (max-width:64em) {
+@media screen and (max-width: 64em) {
     .top-logo {
-        left: 1rem
+        margin-left: 1rem;
     }
 }
 
 main {
-    position: relative
+    position: relative;
+    animation: fadein 0.5s;
 }
 
 header {
@@ -308,7 +307,7 @@ footer a>svg:hover {
     }
 
     .top-border {
-        border-top: 6px solid #e1e0e2
+        border-top: 6px solid #e1e0e2;
     }
 
     .top-logo,
