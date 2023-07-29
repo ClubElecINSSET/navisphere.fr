@@ -41,20 +41,52 @@ body {
     }
 }
 
-.top-logo {
+.background-logo {
+    bottom: 0;
+    display: none;
+    height: 500px;
+    margin-bottom: 200px;
+    opacity: .1;
     position: absolute;
-    top: 0;
-    left: -62px;
-    border: 0;
-    width: 180px;
-    transition: left .1s ease-in-out, opacity .1s ease-in-out;
-    z-index: 999;
-    opacity: .8
+    right: 5rem;
+    z-index: -9999
 }
 
-.top-logo:hover {
+.top-border {
+    border-top: 6px solid #1e1f1d;
     left: 0;
-    opacity: 1
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.top-logo {
+    height: 45px;
+    left: 5rem;
+    position: absolute;
+    top: 0
+}
+
+@media screen and (min-width: 1600px) {
+    .background-logo {
+        display: block
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .background-logo {
+        display: none
+    }
+}
+
+@media screen and (max-width:64em) {
+    .top-logo {
+        left: 1rem
+    }
+}
+
+main {
+    position: relative
 }
 
 header {
@@ -275,11 +307,13 @@ footer a>svg:hover {
         color: #e1e0e2;
     }
 
-    .top-logo {
-        filter: invert(100%);
+    .top-border {
+        border-top: 6px solid #e1e0e2
     }
 
-    .logo {
+    .top-logo,
+    .logo,
+    .background-logo {
         filter: invert(100%);
     }
 
