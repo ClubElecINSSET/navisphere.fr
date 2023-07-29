@@ -80,6 +80,10 @@ body {
     .top-logo {
         margin-left: 1rem;
     }
+
+    header {
+        margin-top: 32px;
+    }
 }
 
 main {
